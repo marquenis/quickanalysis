@@ -1,0 +1,22 @@
+Package: quickanalysis
+Title: Creates quick summary statistics and boxplots
+Version: 1.0.0
+Authors@R: 
+    person("Markus", "Thormeyer", , "thormeyer@zoology.ubc.ca", role = c("aut", "cre"))
+Description: This package is oriented towards people who are looking to analyze
+    any measured numeric variable across multiple treatments, and want a quick 
+    summary statistics and visualization of the data. The `box_and_stats()`
+    function provides fast summary statistics (min, max, mean, median, standard
+    deviation) of the measured variable for each treatment, along with a boxplot 
+    which displays the data visually.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    dplyr,
+    ggplot2,
+    magrittr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
