@@ -24,9 +24,18 @@ repository. Use the follwoing R command to download it:
 
 ## Example
 
-This is a basic example of how the package works using the R dataset
-iris. This dataset contains a measured variable (Sepal.length) across
-multiple categorical treatments (in this case, species).
+This is a basic example of how the package works using the built in R
+dataset: iris. This dataset contains a measured variable (Sepal.length)
+across multiple categorical treatments (in this case, species).
+
+By running this function we can see the maximum, minimum, mean, median,
+and standard deviation of the sepal length of the flowers, grouped by
+their different species.
+
+It also creates a boxplot that lets us visually see the distribution of
+sepal length grouped by species. From this quick boxplot we can see that
+different species have different sepal lengths, and conduct further
+statistical analyses.
 
 ``` r
 library(quickanalysis)
@@ -46,9 +55,10 @@ box_and_stats(iris, Species, Sepal.Length)
     #> 2 versicolor      4.9   7    5.94    5.9 0.516
     #> 3 virginica       4.9   7.9  6.59    6.5 0.636
 
-This package is special because you can easily do all that jazz
+This package is special because all those analysis can be completed just
+by loading the package and running a single line of code.
 
 ## Notes
 
-One interesting thing about this package is it relies on ggplot2, dplyr,
-and magrittr
+Please be aware that this package relies on the following 3 packages for
+internal coding use: 1. dplyr 2. ggplot2 3. magittr
