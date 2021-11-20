@@ -56,10 +56,14 @@ box_and_stats(iris, Species, Sepal.Length)
 This package is special because all those analysis can be completed just
 by loading the package and running a single line of code. 
 
+Please enjoy this package, and use it to kick off the data analysis of any 
+project involving measured variables across multiple categorical treatments!
+
 ## Notes
 
 Please be aware that this package relies on the following 3 packages for 
 internal coding use:
+
 1. dplyr
 2. ggplot2
 3. magittr
